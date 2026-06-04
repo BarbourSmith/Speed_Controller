@@ -55,8 +55,8 @@
     },
     {
       "atomType": "Fusion",
-      "x": 0.5297619047619048,
-      "y": 0.30919220055710306,
+      "x": 0.5244708994708994,
+      "y": 0.3259052924791086,
       "uniqueID": "id-1966",
       "ioValues": [
         {
@@ -85,14 +85,41 @@
             "tags": [],
             "bom": []
           }
+        },
+        {
+          "name": "Shape 2",
+          "ioValue": {
+            "geometry": "extrude-rectangle-158.75-162.56-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-106.67999999999999",
+            "dimension": "3D",
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "color": "#aad7f2",
+            "tags": [],
+            "bom": []
+          }
         }
       ],
       "unionType": "Fusion"
     },
     {
       "atomType": "Circle",
-      "x": 0.22883597883597884,
-      "y": 0.6908077994428969,
+      "x": 0.16468253968253968,
+      "y": 0.8802228412256267,
       "uniqueID": "id-1970",
       "ioValues": [
         {
@@ -104,8 +131,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.3288359788359788,
-      "y": 0.6908077994428969,
+      "x": 0.28439153439153436,
+      "y": 0.8746518105849581,
       "uniqueID": "id-1973",
       "ioValues": [
         {
@@ -502,13 +529,14 @@
     },
     {
       "atomType": "Rectangle",
-      "x": 0.14947089947089948,
-      "y": 0.403899721448468,
+      "x": 0.1541005291005291,
+      "y": 0.4233983286908078,
       "uniqueID": "id-2044",
       "ioValues": [
         {
           "name": "x length",
-          "ioValue": 10
+          "ioValue": 158.75,
+          "currentEquation": "6.25*25.4"
         },
         {
           "name": "y length",
@@ -531,6 +559,41 @@
           "name": "height",
           "ioValue": 106.67999999999999,
           "currentEquation": "4.2*25.4"
+        }
+      ]
+    },
+    {
+      "atomType": "Rectangle",
+      "x": 0.16865079365079363,
+      "y": 0.6100278551532033,
+      "uniqueID": "id-2055",
+      "ioValues": [
+        {
+          "name": "x length",
+          "ioValue": 158.75,
+          "currentEquation": "6.25*25.4"
+        },
+        {
+          "name": "y length",
+          "ioValue": 162.56,
+          "currentEquation": "6.4*25.4"
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.3214285714285714,
+      "y": 0.6128133704735376,
+      "uniqueID": "id-2056",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 10,
+          "currentEquation": "10"
         }
       ]
     }
@@ -575,6 +638,16 @@
       "ap2Name": "geometry",
       "ap1ID": "id-2044",
       "ap2ID": "id-2049"
+    },
+    {
+      "ap2Name": "Shape 2",
+      "ap1ID": "id-2049",
+      "ap2ID": "id-1966"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-2055",
+      "ap2ID": "id-2056"
     }
   ],
   "unitsKey": "MM",
